@@ -1,0 +1,15 @@
+.right-wrapper {
+  position: relative;
+  width: 528px;
+  min-height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+
+
+  &__image {
+    position: absolute;
+    top: 125px;
+    right: -100px;
+    z-index: 0;
+  }
+}

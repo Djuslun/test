@@ -1,0 +1,19 @@
+.left-wrapper {
+  position: relative;
+  width: 137px;
+  min-height: 100%;
+  background-color: $violet;
+
+  &__title {
+    position: absolute;
+    bottom: 83px;
+    left: 10px;
+    width: 180px;
+    font-family: PT Sans;
+    font-size: 49px;
+    line-height: 63px;
+    font-weight: 400;
+    color: #ffffff;
+    transform: rotate(-90deg);
+  }
+}

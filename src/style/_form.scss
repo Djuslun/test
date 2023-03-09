@@ -1,0 +1,111 @@
+.form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 39px 22px 33px 21px;
+
+  &__title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.46px;
+  }
+
+  &__description {
+    font-weight: 300;
+    margin-bottom: 23px;
+  }
+
+  &__input-box {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template: repeat(4, 42px) / 1fr 1fr;
+    gap: 16px 13px;
+  }
+
+  &__input-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    padding: 0 0 6px 0;
+    border: none;
+    border-bottom: 1px solid #F2F2F2;
+    color: #111111;
+    background: rgba(255, 255, 255, 0);
+  }
+
+  &__input-date {
+    display: flex;
+    justify-content: space-between;
+
+    select {
+      flex: 1 1 auto;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__input-radio {
+    position: relative;
+    top: 4px;
+    left: -2px;
+    display: flex;
+
+    p {
+      display: flex;
+      align-items: center;
+
+      input {
+        margin-right: 6px;
+      }
+    }
+
+    p:not(:last-child) {
+      margin-right: 20px;
+
+
+    }
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__login-link {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 200;
+  }
+
+  &__button {
+    width: 154px;
+    height: 32px;
+    font-family: PT Sans;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: $violet;
+    border: none;
+  }
+
+  label {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+}
+
+
+
+.link {
+  color: $violet;
+}
