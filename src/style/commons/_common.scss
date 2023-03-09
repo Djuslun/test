@@ -8,3 +8,17 @@ body {
   background-color: #F4F5FC;
   font-family: WorkSans;
 }
+
+
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    padding: 20px;
+  }
+}

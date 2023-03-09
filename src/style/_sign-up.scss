@@ -4,3 +4,15 @@
   margin: 0 auto;
   display: flex;
 }
+
+@media (max-width: 767px) {
+  .sign-up {
+    width: 500px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sign-up {
+    width: 100%;
+  }
+}

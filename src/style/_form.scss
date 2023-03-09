@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 39px 22px 33px 21px;
 
   &__title {
     font-size: 22px;
@@ -108,4 +107,117 @@
 
 .link {
   color: $violet;
+}
+
+@media (max-width: 767px) {
+  .form {
+
+
+    &__title {}
+
+    &__description {}
+
+    &__input-box {}
+
+    &__input-item {}
+
+    &__input {}
+
+    &__input-date {
+
+
+      select {
+
+
+        &:last-child {}
+      }
+    }
+
+    &__input-radio {
+
+
+      p {
+
+        input {}
+      }
+
+      p:not(:last-child) {}
+    }
+
+    &__button-box {}
+
+    &__login-link {}
+
+    &__button {}
+
+    label {}
+  }
+}
+
+@media (max-width: 575px) {
+  .form {
+
+
+    &__title {}
+
+    &__description {}
+
+    &__input-box {
+      grid-template-columns: 1fr;
+      grid-auto-rows: max-content;
+      margin-bottom: 10px;
+    }
+
+    &__input-item {}
+
+    &__input {}
+
+    &__input-date {
+
+
+      select {
+
+
+        &:last-child {}
+      }
+    }
+
+    &__input-radio {
+
+
+      p {
+
+        input {}
+      }
+
+      p:not(:last-child) {}
+    }
+
+    &__button-box {
+      flex-direction: column;
+    }
+
+    &__login-link {
+      order: 1;
+    }
+
+    &__button {
+      order: 0;
+      margin-bottom: 10px;
+    }
+
+    label {}
+  }
+}
+
+@media (max-width: 424px) {
+  .form {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__description {
+      font-size: 13px;
+    }
+  }
 }
