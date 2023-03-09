@@ -5,6 +5,12 @@
   flex-direction: column;
   height: 100%;
 
+  label {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+
   &__title {
     font-size: 22px;
     font-weight: 500;
@@ -27,13 +33,21 @@
   &__input-item {
     display: flex;
     flex-direction: column;
+
+    &_gender {
+      label {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   &__input {
+    height: 100%;
     padding: 0 0 6px 0;
     border: none;
     border-bottom: 1px solid #F2F2F2;
     color: #111111;
+    font-weight: 500;
     background: rgba(255, 255, 255, 0);
   }
 
@@ -52,21 +66,19 @@
   }
 
   &__input-radio {
-    position: relative;
-    top: 4px;
-    left: -2px;
     display: flex;
+    position: relative;
 
-    p {
+    label {
+      font-size: 14px;
+      color: #111111;
+      font-weight: 500;
       display: flex;
       align-items: center;
 
-      input {
-        margin-right: 6px;
-      }
     }
 
-    p:not(:last-child) {
+    label:not(:last-child) {
       margin-right: 20px;
 
 
@@ -96,16 +108,13 @@
     border: none;
   }
 
-  label {
-    font-size: 12px;
-    font-weight: 300;
-    margin-bottom: 5px;
-  }
+
 }
 
 
 
 .link {
+  font-weight: 500;
   color: $violet;
 }
 
@@ -218,6 +227,16 @@
 
     &__description {
       font-size: 13px;
+    }
+
+    &__input-item {
+      font-size: 10px;
+    }
+
+    &__input-radio {
+      label {
+        font-size: 10px;
+      }
     }
   }
 }
