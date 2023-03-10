@@ -1,4 +1,5 @@
-import { emailValid, passwordValid, confirmPasswordValid, nameValid, lastNameValid } from './validateInput'
+import { emailValid, passwordValid, confirmPasswordValid, nameValid, lastNameValid } from './validateInput';
+import { messageWindow, showMessageWindow } from './showMessage';
 //ye98j8o0R
 
 const form = document.querySelector('form');
@@ -24,6 +25,8 @@ function postData(form) {
 
     if (isformValid) {
       console.log(object)
+      form.reset();
+      showMessageWindow();
     } else {
       console.log('error')
     }

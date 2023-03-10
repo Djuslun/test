@@ -6,3 +6,4 @@ import './modules/dateSelect';
 import './modules/customSelect';
 import './modules/validateInput';
 import './modules/submitForm';
+import './modules/showMessage';

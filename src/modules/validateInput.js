@@ -20,7 +20,6 @@ function classChange(input, isValid) {
     input.classList.add('_unvalid');
     input.classList.remove('_valid');
   }
-  console.log(isValid)
 }
 
 emailInput.addEventListener('input', () => {
