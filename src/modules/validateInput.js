@@ -12,23 +12,39 @@ function validateInput(input, pattern) {
   return pattern.test(input.value);
 }
 
+function classChange(input, isValid) {
+  if (isValid) {
+    input.classList.remove('_unvalid');
+    input.classList.add('_valid');
+  } else {
+    input.classList.add('_unvalid');
+    input.classList.remove('_valid');
+  }
+  console.log(isValid)
+}
+
 emailInput.addEventListener('input', () => {
   emailValid = validateInput(emailInput, emailPattern);
+  classChange(emailInput, emailValid);
 })
 
 passwordInput.addEventListener('input', () => {
   passwordValid = validateInput(passwordInput, passwordPattern);
+  classChange(passwordInput, passwordValid);
 })
 
 confirmPasswordInput.addEventListener('input', () => {
   confirmPasswordValid = confirmPasswordInput.value === passwordInput.value;
+  classChange(confirmPasswordInput, confirmPasswordValid);
 })
 
 
 nameInput.addEventListener('input', () => {
   nameValid = validateInput(nameInput, namePattern);
+  classChange(nameInput, nameValid);
 })
 
 lastNameInput.addEventListener('input', () => {
   lastNameValid = validateInput(lastNameInput, namePattern);
+  classChange(lastNameInput, lastNameValid);
 })
