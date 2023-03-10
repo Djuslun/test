@@ -26,6 +26,7 @@ for (let month in calendar) {
 }
 
 function genarateDays(month) {
+  let currentDay = daySelect.value;
   daySelect.innerHTML = '';
   for (let i = 1; i <= calendar[month]; i++) {
     const option = document.createElement('option');
@@ -38,6 +39,11 @@ function genarateDays(month) {
     option.value = 29;
     option.innerHTML = `${29}`;
     daySelect.append(option);
+  }
+  if (calendar[month] > (currentDay || 1)) {
+    daySelect.value = currentDay || 1;
+  } else {
+    daySelect.value = calendar[month];
   }
 }
 
