@@ -15,6 +15,13 @@ function postData(form) {
       object[key] = value;
     });
 
+    let birthDay = `${object.day}-${object.month}-${object.year}`;
+    delete object.day;
+    delete object.month;
+    delete object.year;
+    delete object.confirm - password;
+    object.birthDay = birthDay;
+
     if (isformValid) {
       console.log(object)
     } else {
