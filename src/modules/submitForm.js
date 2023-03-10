@@ -1,4 +1,4 @@
-import { emailValid, passwordValid, confirmPasswordValid, nameValid, lastNameValid } from './validateInput';
+import { emailValid, passwordValid, confirmPasswordValid, nameValid, lastNameValid, removeValidClass } from './validateInput';
 import { messageWindow, showMessageWindow } from './showMessage';
 //ye98j8o0R
 
@@ -27,6 +27,7 @@ function postData(form) {
       console.log(object)
       form.reset();
       showMessageWindow();
+      removeValidClass();
     } else {
       console.log('error')
     }

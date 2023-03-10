@@ -22,6 +22,14 @@ function classChange(input, isValid) {
   }
 }
 
+export function removeValidClass() {
+  emailInput.classList.remove('_valid');
+  passwordInput.classList.remove('_valid');
+  confirmPasswordInput.classList.remove('_valid');
+  nameInput.classList.remove('_valid');
+  lastNameInput.classList.remove('_valid');
+}
+
 emailInput.addEventListener('input', () => {
   emailValid = validateInput(emailInput, emailPattern);
   classChange(emailInput, emailValid);
