@@ -9,6 +9,12 @@ body {
   font-family: WorkSans;
 }
 
+.overFill {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 
 @media (max-width: 767px) {
   body {

@@ -21,6 +21,7 @@
   &__description {
     font-weight: 300;
     margin-bottom: 23px;
+    -webkit-line-clamp: 2;
   }
 
   &__input-box {
