@@ -1,5 +1,6 @@
 import { emailValid, passwordValid, confirmPasswordValid, nameValid, lastNameValid, removeValidClass } from './validateInput';
 import { messageWindow, showMessageWindow } from './showMessage';
+import { submitButtonError } from './animateForm';
 //ye98j8o0R
 
 const form = document.querySelector('form');
@@ -24,11 +25,12 @@ function postData(form) {
     object.birthDay = birthDay;
 
     if (isformValid) {
-      console.log(object)
+      console.log(JSON.stringify(object))
       form.reset();
       showMessageWindow();
       removeValidClass();
     } else {
+      submitButtonError();
       console.log('error')
     }
   })

@@ -1,9 +1,9 @@
 import './index.html';
 import './index.scss';
 
-import './modules/animateForm';
+import './modules/forms/animateForm';
 import './modules/dateSelect';
 import './modules/customSelect';
-import './modules/validateInput';
-import './modules/submitForm';
-import './modules/showMessage';
+import './modules/forms/validateInput';
+import './modules/forms/submitForm';
+import './modules/forms/showMessage';

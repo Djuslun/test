@@ -96,7 +96,10 @@ q:after {
 
 /* remember to define focus styles! */
 :focus {
-  outline: 0;
+  border-radius: 5px;
+  outline: 1px solid rgba(220, 220, 220, 0.6);
+  outline-offset: 2px;
+  box-shadow: 1px 3px 3px rgba(220, 220, 220, 0.8);
 }
 
 /* remember to highlight inserts somehow! */

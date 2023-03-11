@@ -40,7 +40,6 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "json-server": "^0.17.2",
     "normalize.css": "^8.0.1"
   }
 }
