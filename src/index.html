@@ -33,12 +33,14 @@
           </div>
           <div class="form__input-item _hidden">
             <label for="nationality">Nationality</label>
-            <select name="nationality" id="nationality" class="form__input">
-              <option value="american">American</option>
-              <option value="russian">Russian</option>
-              <option value="italian">Italian</option>
-              <option value="german">German</option>
-            </select>
+            <div class="form__input-select">
+              <select name="nationality" id="nationality" class="form__input">
+                <option value="american">American</option>
+                <option value="russian">Russian</option>
+                <option value="italian">Italian</option>
+                <option value="german">German</option>
+              </select>
+            </div>
           </div>
           <div class="form__input-item _hidden">
             <label for="email">E-mail</label>
@@ -46,14 +48,20 @@
             <span></span>
           </div>
           <div class="form__input-item _hidden">
-            <label for="date">Date of Birth</label>
+            <label>Date of Birth</label>
             <div class="form__input-date" id="date">
-              <select name="day" id="day" class="form__input">
-              </select>
-              <select name="month" id="month" class="form__input">
-              </select>
-              <select name="year" id="year" class="form__input">
-              </select>
+              <div class="form__input-select">
+                <select name="day" id="day" class="form__input">
+                </select>
+              </div>
+              <div class="form__input-select">
+                <select name="month" id="month" class="form__input">
+                </select>
+              </div>
+              <div class="form__input-select">
+                <select name="year" id="year" class="form__input">
+                </select>
+              </div>
             </div>
           </div>
           <div class="form__input-item _hidden form__input-item_gender">
