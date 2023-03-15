@@ -23,7 +23,7 @@ function postData(form) {
 
     try {
       if (isformValid) {
-        let response = await fetch('http://localhost:5000/api', {
+        let response = await fetch('https://kind-jay-tank-top.cyclic.app/api', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json; charset=utf-8'
