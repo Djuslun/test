@@ -106,6 +106,8 @@
   }
 
   &__login-link {
+    position: relative;
+    z-index: 4;
     color: #000000;
     font-size: 13px;
     font-weight: 200;
