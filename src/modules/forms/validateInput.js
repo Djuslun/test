@@ -28,6 +28,7 @@ export function removeValidClass() {
   confirmPasswordInput.classList.remove('_valid');
   nameInput.classList.remove('_valid');
   lastNameInput.classList.remove('_valid');
+  emailValid = passwordValid = confirmPasswordValid = nameValid = lastNameValid = false;
 }
 
 emailInput.addEventListener('input', () => {
