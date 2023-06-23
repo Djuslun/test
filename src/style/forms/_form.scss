@@ -114,6 +114,7 @@
   }
 
   &__button {
+    transition: all 0.3s;
     position: relative;
     width: 154px;
     height: 32px;
@@ -123,6 +124,14 @@
     line-height: 18px;
     background-color: $violet;
     border: none;
+
+    &:hover {
+      background-color: $violet_light;
+    }
+
+    &:active {
+      background-color: $violet_dark;
+    }
   }
 
 
@@ -131,8 +140,17 @@
 
 
 .link {
+  transition: all 0.3s;
   font-weight: 500;
   color: $violet;
+
+  &:hover {
+    color: $violet_light;
+  }
+
+  &:active {
+    color: $violet_dark;
+  }
 }
 
 @media (max-width: 575px) {
